@@ -7,24 +7,14 @@ namespace UI.Menu
     {
         public AudioMixer audioMixer;
 
-        public void SetMasterVolume(float volume)
-        {
-            audioMixer.SetFloat("MasterVolume", volume);
-        }
-        
-        public void SetSoundVolume(float volume)
-        {
-            audioMixer.SetFloat("SoundVolume", volume);
-        }
-        
-        public void SetMusicVolume(float volume)
-        {
-            audioMixer.SetFloat("MusicVolume", volume);
-        }
-        
-        public void SetFullScreen(bool isFullScreen)
-        {
-            Screen.fullScreen = isFullScreen;
-        }
+        private void ApplyVolumeTo(string groupName, float volume) => audioMixer.SetFloat(groupName, volume <= -40 ? -80 : volume);
+
+        public void SetMasterVolume(float volume) => ApplyVolumeTo("MasterVolume", volume);
+
+        public void SetSoundVolume(float volume) => ApplyVolumeTo("SoundVolume", volume);
+
+        public void SetMusicVolume(float volume) => ApplyVolumeTo("MusicVolume", volume);
+
+        public void SetFullScreen(bool isFullScreen) => Screen.fullScreen = isFullScreen;
     }
 }
