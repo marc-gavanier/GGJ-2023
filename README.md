@@ -94,9 +94,15 @@ git clone git@github.com:marc-gavanier/GGJ-2023.git
 - [Marc Gavanier - Programmer](https://www.linkedin.com/in/marc-gavanier/)
 - Nicolas Treiber - Programmer
 
-### Musics
+### Audio
 
-No musics yet
+#### Musics
+
+- [Slow Motion - Lexin Music](https://pixabay.com/music/small-emotions-slow-motion-121841/)
+
+#### Sounds
+
+- [ButtonPress - BigDino1995](https://pixabay.com/sound-effects/buttonpress-94482/)
 
 ### Graphics
 
