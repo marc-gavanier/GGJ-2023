@@ -2,7 +2,7 @@
 
 Video game produced in 48 hours for Global Game Jam 2023, feel free to review our [submission]() when it will be available. <!-- todo: make it available -->
 
-![Game Title](./Assets/Graphics/Textures/UI/GameTitle.png) <!-- todo: create a template for it -->
+![Game Title](./Assets/Graphics/Textures/UI/GameTitle.png)
 
 ## Table of Contents
 
@@ -100,7 +100,13 @@ No musics yet
 
 ### Graphics
 
-No graphics yet
+#### Textures
+
+- [Blue Sky - Francesco Ungaro](https://www.pexels.com/photo/blue-sky-281260/)
+
+#### Fonts
+
+- [Cloud - Metal Studio](https://www.dafont.com/fr/cloud-2.font/)
 
 ## License
 
