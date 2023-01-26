@@ -20,6 +20,9 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
+          - StandaloneOSX
+          - StandaloneWindows64
+          - StandaloneLinux64
           - WebGL
 
     steps:
