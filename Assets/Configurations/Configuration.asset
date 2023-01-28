@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
   m_Name: MasterVolume
   m_EditorClassIdentifier: 
-  value: 0
+  value: 0.27000841
   onChange:
     m_PersistentCalls:
       m_Calls: []
@@ -33,13 +33,13 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 11400000, guid: 5a9951cf544ee134796c23d1b7cdc5bb, type: 2}
+        m_TargetAssemblyTypeName: Utility.FullscreenManager, Assembly-CSharp
+        m_MethodName: SetFullscreenMode
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
   m_Name: MusicVolume
   m_EditorClassIdentifier: 
-  value: 0
+  value: -6
   onChange:
     m_PersistentCalls:
       m_Calls: []
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
   m_Name: SfxVolume
   m_EditorClassIdentifier: 
-  value: 0
+  value: 0.23288241
   onChange:
     m_PersistentCalls:
       m_Calls: []
