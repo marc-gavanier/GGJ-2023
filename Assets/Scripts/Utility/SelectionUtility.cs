@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 
 namespace Utility {
+	#if UNITY_EDITOR
 	public static class SelectionUtility {
 		public static string CurrentFolder {
 			get {
@@ -12,4 +13,5 @@ namespace Utility {
 
 		public static bool IsFolder => CurrentFolder != null;
 	}
+	#endif
 }

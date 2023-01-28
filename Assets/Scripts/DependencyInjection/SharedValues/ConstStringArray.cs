@@ -6,7 +6,9 @@ namespace DependencyInjection.SharedValues {
 		
 	}
 	
+	#if UNITY_EDITOR
 	public static partial class ScriptableObjectExtension {
 		public static ConstStringArray AddConstStringArray(this ScriptableObject target, string name) => target.AddValue<ConstStringArray>(name);
 	}
+	#endif
 }

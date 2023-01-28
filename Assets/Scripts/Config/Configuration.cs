@@ -7,16 +7,20 @@ namespace Config {
 	public class Configuration : ScriptableObject {
 		[SerializeReference] private StringValue language;
 
-		[MenuItem("Assets/Create/GGJ/Configuration", false)]
-		private static void Create() {
-			var configuration = ScriptableObject.CreateInstance<Configuration>();
-			configuration.SaveAsset("Configuration");
-			configuration.language = configuration.AddString("Language");
-		}
+		#if UNITY_EDITOR
+		public static class ConfigurationMenu {
+			[MenuItem("Assets/Create/GGJ/Configuration", false)]
+			private static void Create() {
+				var configuration = ScriptableObject.CreateInstance<Configuration>();
+				configuration.SaveAsset("Configuration");
+				configuration.language = configuration.AddString("Language");
+			}
 
-		[MenuItem("Assets/Create/GGJ/Configuration", true)]
-		private static bool ValidateCreate() {
-			return SelectionUtility.IsFolder;
+			[MenuItem("Assets/Create/GGJ/Configuration", true)]
+			private static bool ValidateCreate() {
+				return SelectionUtility.IsFolder;
+			}
 		}
+		#endif
 	}
 }
