@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using DependencyInjection.SharedValues;
+﻿using DependencyInjection.SharedValues;
 using UnityEditor;
 using UnityEngine;
 using Utility;
@@ -14,16 +13,18 @@ namespace Localization {
 
 		public ConstStringArray Languages => languages;
 
+		#if UNITY_EDITOR
 		[MenuItem("Assets/Create/GGJ/Services/Localization Manager", false)]
 		public static void Create() {
 			var localizationManager = ScriptableObject.CreateInstance<LocalizationManager>();
 			localizationManager.SaveAsset("LocalizationManager");
 			localizationManager.languages = localizationManager.AddConstStringArray("Languages");
 		}
-
+		
 		[MenuItem("Assets/Create/GGJ/Services/Localization Manager", true)]
 		public static bool ValidateCreate() {
-			return SelectionUtility.IsFolder && Resources.FindObjectsOfTypeAll<LocalizationManager>().Length == 0;
+			return SelectionUtility.IsFolder && Instance == null;
 		}
+		#endif
 	}
 }

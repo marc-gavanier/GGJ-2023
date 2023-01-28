@@ -2,6 +2,7 @@
 using UnityEngine;
 
 namespace DependencyInjection.SharedValues {
+	#if UNITY_EDITOR
 	public static partial class ScriptableObjectExtension {
 		public static TValue AddValue<TValue>(this ScriptableObject target, string name) where TValue : ScriptableObject {
 			var value = ScriptableObject.CreateInstance<TValue>();
@@ -13,4 +14,5 @@ namespace DependencyInjection.SharedValues {
 			return value;
 		}
 	}
+	#endif
 }
