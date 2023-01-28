@@ -7,7 +7,9 @@ namespace DependencyInjection.SharedValues {
 		
 	}
 	
+	#if UNITY_EDITOR
 	public static partial class ScriptableObjectExtension {
 		public static FloatValue AddFloat(this ScriptableObject target, string name) => target.AddValue<FloatValue>(name);
 	}
+	#endif
 }
