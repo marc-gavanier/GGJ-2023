@@ -38,7 +38,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: localizedString.entries.Array.data[1].language
-    value: Francais
+    value: "Fran\xE7ais"
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: localizedString.entries.Array.data[1].text
@@ -47,5 +47,5 @@ Preset:
   - target: {fileID: 0}
     propertyPath: language
     value: 
-    objectReference: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+    objectReference: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
   m_ExcludedProperties: []

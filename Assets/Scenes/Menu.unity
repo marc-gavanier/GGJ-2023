@@ -435,7 +435,7 @@ MonoBehaviour:
       text: Back
     - language: "Fran\xE7ais"
       text: Retour
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &169258873
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
       text: Settings
     - language: "Fran\xE7ais"
       text: Parametres
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 0}
 --- !u!1 &392767964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1005,7 @@ MonoBehaviour:
       text: Quit
     - language: "Fran\xE7ais"
       text: Quitter
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 0}
 --- !u!1 &428517941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1124,7 @@ MonoBehaviour:
       text: Full screen
     - language: "Fran\xE7ais"
       text: Plein ecran
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &449413298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,7 +2629,7 @@ MonoBehaviour:
       text: Music Volume
     - language: "Fran\xE7ais"
       text: Volume musique
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1232963292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,7 +2936,7 @@ MonoBehaviour:
       text: Settings
     - language: "Fran\xE7ais"
       text: Parametres
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 0}
 --- !u!1 &1403839753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,7 +3136,7 @@ MonoBehaviour:
       text: SFX Volume
     - language: "Fran\xE7ais"
       text: Volume effets
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1481888603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,7 +3302,7 @@ MonoBehaviour:
       text: Play
     - language: "Fran\xE7ais"
       text: Jouer
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 0}
 --- !u!1 &1513593389
 GameObject:
   m_ObjectHideFlags: 0
@@ -9000,7 +9000,7 @@ MonoBehaviour:
       text: Master volume
     - language: "Fran\xE7ais"
       text: Volume principal
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &2136211699
 GameObject:
   m_ObjectHideFlags: 0

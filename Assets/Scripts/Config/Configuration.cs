@@ -6,6 +6,10 @@ using Utility;
 namespace Config {
 	public class Configuration : ScriptableObject {
 		[SerializeReference] private StringValue language;
+		[SerializeReference] private FloatValue masterVolume;
+		[SerializeReference] private FloatValue sfxVolume;
+		[SerializeReference] private FloatValue musicVolume;
+		[SerializeReference] private BoolValue isFullscreen;
 
 		#if UNITY_EDITOR
 		public static class ConfigurationMenu {

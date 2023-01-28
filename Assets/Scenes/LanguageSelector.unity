@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9c2e8a75f44f22b281b57e510c8ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!114 &781137306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1416,7 @@ MonoBehaviour:
       text: Start
     - language: "Fran\xE7ais"
       text: "D\xE9marrer"
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1344480372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 96.155, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449927937
@@ -1753,7 +1753,7 @@ MonoBehaviour:
       text: Choose a language
     - language: "Fran\xE7ais"
       text: Choisissez une langue
-  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
+  language: {fileID: 8730222652447996754, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1779508122
 GameObject:
   m_ObjectHideFlags: 0
