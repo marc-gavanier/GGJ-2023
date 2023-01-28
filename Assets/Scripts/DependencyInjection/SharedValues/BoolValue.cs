@@ -3,7 +3,7 @@ using Utility.Events;
 
 namespace DependencyInjection.SharedValues {
 	[CreateAssetMenu(menuName = "GGJ/Values/Bool")]
-	public class BoolValue : BaseValue<int, IntEvent> {
+	public class BoolValue : BaseValue<bool, BoolEvent> {
 		
 	}
 	
