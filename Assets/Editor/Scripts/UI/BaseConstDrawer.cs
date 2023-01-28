@@ -31,6 +31,7 @@ namespace Editor.Scripts.UI {
 			}
 
 			EditorGUI.PropertyField(position, serializedProperty, label);
+			serializedProperty.serializedObject.ApplyModifiedProperties();
 		}
 	}
 }

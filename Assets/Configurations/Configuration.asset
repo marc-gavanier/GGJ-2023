@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2362176630732553995
+--- !u!114 &-8880397370892000535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,13 +9,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abc382ecedd6474996843965366c9b32, type: 3}
-  m_Name: Language
+  m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
+  m_Name: MasterVolume
   m_EditorClassIdentifier: 
-  value: 
+  value: 0.27000841
   onChange:
     m_PersistentCalls:
       m_Calls: []
+  assetBinder: {fileID: 11400000, guid: 1901619e867f5a54eb7f1904835857ba, type: 2}
+--- !u!114 &-2945196737456992568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715d6ca32b7c4bc787a2976ef50d39ba, type: 3}
+  m_Name: IsFullScreen
+  m_EditorClassIdentifier: 
+  value: 0
+  onChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5a9951cf544ee134796c23d1b7cdc5bb, type: 2}
+        m_TargetAssemblyTypeName: Utility.FullscreenManager, Assembly-CSharp
+        m_MethodName: SetFullscreenMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  assetBinder: {fileID: 0}
+--- !u!114 &-2182825590625536534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
+  m_Name: MusicVolume
+  m_EditorClassIdentifier: 
+  value: -6
+  onChange:
+    m_PersistentCalls:
+      m_Calls: []
+  assetBinder: {fileID: 11400000, guid: f568388c0f3d84040a98779b45ab1f27, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,4 +75,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea48b54e958c424f9c20c48f65a23d93, type: 3}
   m_Name: Configuration
   m_EditorClassIdentifier: 
-  language: {fileID: -2362176630732553995}
+  language: {fileID: 8730222652447996754}
+  masterVolume: {fileID: -8880397370892000535}
+  sfxVolume: {fileID: 6478207206450140530}
+  musicVolume: {fileID: -2182825590625536534}
+  isFullscreen: {fileID: -2945196737456992568}
+--- !u!114 &6478207206450140530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
+  m_Name: SfxVolume
+  m_EditorClassIdentifier: 
+  value: 0.23288241
+  onChange:
+    m_PersistentCalls:
+      m_Calls: []
+  assetBinder: {fileID: 11400000, guid: 7148bb6824526a0418b088723ebd398e, type: 2}
+--- !u!114 &8730222652447996754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc382ecedd6474996843965366c9b32, type: 3}
+  m_Name: Language
+  m_EditorClassIdentifier: 
+  value: English
+  onChange:
+    m_PersistentCalls:
+      m_Calls: []
+  assetBinder: {fileID: 0}
