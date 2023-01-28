@@ -14,10 +14,19 @@ namespace UI.ValueBinders {
 			slider = GetComponentInChildren<Slider>();
 			slider.value = value;
 			slider.onValueChanged.AddListener(UpdateValue);
+			value.OnChange.AddListener(ValueChanged);
+		}
+
+		private void OnDestroy() {
+			value.OnChange.RemoveListener(ValueChanged);
 		}
 
 		private void UpdateValue(float newValue) {
 			value.Value = newValue;
+		}
+
+		private void ValueChanged(float newValue) {
+			slider.value = newValue;
 		}
 	}
 }
