@@ -31,7 +31,19 @@ MonoBehaviour:
   value: 0
   onChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-2182825590625536534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637b7fdeb79f4b8a86bc2cd564ecfc99, type: 3}
   m_Name: SfxVolume
   m_EditorClassIdentifier: 
-  value: 0
+  value: -6
   onChange:
     m_PersistentCalls:
       m_Calls: []
