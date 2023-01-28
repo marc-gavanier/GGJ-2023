@@ -23,7 +23,6 @@ jobs:
           - StandaloneOSX
           - StandaloneWindows64
           - StandaloneLinux64
-          - WebGL
 
     steps:
     - name: Checkout game repository
@@ -55,3 +54,87 @@ jobs:
       with:
         name: Build-${{ matrix.targetPlatform }}
         path: build/${{ matrix.targetPlatform }}
+
+  build-webgl:
+    name: Build for WebGL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout game repository
+        id: checkout-game-repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Cache build files
+        id: cache-build-files
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-WebGL
+          restore-keys: Library-
+
+      - name: Build game
+        id: build-game
+        uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          unityVersion: 2021.3.16f1
+          targetPlatform: WebGL
+
+      - name: Upload build artifact
+        id: upload-build-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Build-WebGL
+          path: build/WebGL
+
+  deploy:
+    name: Publish ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneOSX
+          - StandaloneWindows64
+          - StandaloneLinux64
+
+    steps:
+      - name: Download build
+        id: download-build-artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
+
+      - name: Upload ${{ matrix.targetPlatform }} to itch.io
+        uses: robpc/itchio-upload-action@v1
+        with:
+          path: build/${{ matrix.targetPlatform }}
+          project: marc-gavanier/ggj-2023
+          channel: ${{ matrix.targetPlatform }}
+          api-key: ${{ secrets.BUTLER_API_KEY }}
+
+  deploy-webgl:
+    name: Publish WebGL
+    runs-on: ubuntu-latest
+    needs: build-webgl
+
+    steps:
+      - name: Download build
+        id: download-build-artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: Build-WebGL
+          path: build/WebGL
+
+      - name: Upload WebGL to itch.io
+        uses: robpc/itchio-upload-action@v1
+        with:
+          path: build/WebGL
+          project: marc-gavanier/ggj-2023
+          channel: WebGL
+          api-key: ${{ secrets.BUTLER_API_KEY }}
