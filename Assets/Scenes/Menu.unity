@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 168504732}
   - component: {fileID: 168504731}
   - component: {fileID: 168504730}
+  - component: {fileID: 168504733}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -416,6 +417,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168504728}
   m_CullTransparentMesh: 1
+--- !u!114 &168504733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168504728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Back
+    - language: "Fran\xE7ais"
+      text: Retour
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &169258873
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +674,7 @@ GameObject:
   - component: {fileID: 315117020}
   - component: {fileID: 315117019}
   - component: {fileID: 315117018}
+  - component: {fileID: 315117021}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -800,6 +821,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315117016}
   m_CullTransparentMesh: 1
+--- !u!114 &315117021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315117016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Settings
+    - language: "Fran\xE7ais"
+      text: Parametres
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &392767964
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +852,7 @@ GameObject:
   - component: {fileID: 392767968}
   - component: {fileID: 392767967}
   - component: {fileID: 392767966}
+  - component: {fileID: 392767969}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -946,6 +987,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392767964}
   m_CullTransparentMesh: 1
+--- !u!114 &392767969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392767964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Quit
+    - language: "Fran\xE7ais"
+      text: Quitter
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &428517941
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +1016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 428517942}
   - component: {fileID: 428517943}
+  - component: {fileID: 428517944}
   m_Layer: 5
   m_Name: FullScreen
   m_TagString: Untagged
@@ -1045,6 +1106,25 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &428517944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428517941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Full screen
+    - language: "Fran\xE7ais"
+      text: Plein ecran
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &449413298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,7 +1537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &574027949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2037,8 +2117,8 @@ RectTransform:
   m_Father: {fileID: 532379840}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2383,8 +2463,8 @@ RectTransform:
   m_Father: {fileID: 169258874}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2436,6 +2516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065739222}
   - component: {fileID: 1065739223}
+  - component: {fileID: 1065739224}
   m_Layer: 5
   m_Name: MusicVolume
   m_TagString: Untagged
@@ -2530,6 +2611,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1065739224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065739221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Music Volume
+    - language: "Fran\xE7ais"
+      text: Volume musique
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1232963292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,7 +2740,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2693,6 +2793,7 @@ GameObject:
   - component: {fileID: 1384082960}
   - component: {fileID: 1384082962}
   - component: {fileID: 1384082961}
+  - component: {fileID: 1384082963}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -2817,6 +2918,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384082959}
   m_CullTransparentMesh: 1
+--- !u!114 &1384082963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384082959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Settings
+    - language: "Fran\xE7ais"
+      text: Parametres
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1403839753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,8 +2970,8 @@ RectTransform:
   m_Father: {fileID: 194458541}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2903,6 +3023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405208553}
   - component: {fileID: 1405208554}
+  - component: {fileID: 1405208555}
   m_Layer: 5
   m_Name: SoundVolume
   m_TagString: Untagged
@@ -2997,6 +3118,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1405208555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405208552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: SFX Volume
+    - language: "Fran\xE7ais"
+      text: Volume effets
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1481888603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,6 +3149,7 @@ GameObject:
   - component: {fileID: 1481888607}
   - component: {fileID: 1481888606}
   - component: {fileID: 1481888605}
+  - component: {fileID: 1481888608}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -3143,6 +3284,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481888603}
   m_CullTransparentMesh: 1
+--- !u!114 &1481888608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481888603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Play
+    - language: "Fran\xE7ais"
+      text: Jouer
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &1513593389
 GameObject:
   m_ObjectHideFlags: 0
@@ -8394,7 +8554,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8452,7 +8612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1780942826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8522,7 +8682,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8727,6 +8887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1947869386}
   - component: {fileID: 1947869387}
+  - component: {fileID: 1947869388}
   m_Layer: 5
   m_Name: MasterVolume
   m_TagString: Untagged
@@ -8821,6 +8982,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1947869388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947869385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5ab642cc44bc29ee33326ab5ddedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedString:
+    entries:
+    - language: English
+      text: Master volume
+    - language: "Fran\xE7ais"
+      text: Volume principal
+  language: {fileID: -2362176630732553995, guid: e0800adf2f76fc7438dd8bf38859b55f, type: 2}
 --- !u!1 &2136211699
 GameObject:
   m_ObjectHideFlags: 0
