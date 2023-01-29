@@ -6,43 +6,35 @@ Video game produced in 48 hours for Global Game Jam 2023, feel free to review ou
 
 ## Table of Contents
 
-- [How to play](#how-to-play)
-- [About](#about)
-  - [Global Game Jam](#global-game-jam)
-  - [Diversifiers](#diversifiers)
-  - [Controls](#controls)
-  - [Context](#context)
-- [Synopsis](#synopsis)
-- [Platforms](#platforms)
-- [Built with](#built-with)
-- [Getting started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Contributing](#contributing)
-- [Credits](#credits)
-  - [Jammers](#jammers)
-  - [Musics](#musics)
-  - [Graphics](#graphics)
-- [License](#license)
+- 🎮 [How to play](#how-to-play)
+- 🖥️ [Platforms](#platforms)
+- 📜 [Synopsis](#synopsis)
+- 🪧 [About](#about)
+- 🏗️ [Built with](#built-with)
+- 🤗 [Contributing](#contributing)
+- 👥 [Credits](#credits)
+- 🤗 [Contributing](#contributing)
+- 📝 [License](#license)
 
 ## How to play
 
 - Open your favorite web browser
-- Go to https://marc-gavanier.itch.io/ggj2023 (Not availabe yet) <!-- todo: make it available -->
+- Go to https://marc-gavanier.itch.io/ggj-2023
 - Click on "Run game"
 - Enjoy !
 
+## Platforms
+
+- Web: [play in the browser on itch.io game page](https://marc-gavanier.itch.io/ggj-2023)
+- Linux: [download from itch.io game page](https://marc-gavanier.itch.io/ggj-2023)
+- Windows: [download from itch.io game page](https://marc-gavanier.itch.io/ggj-2023)
+- Mac OS X: [download from itch.io game page](https://marc-gavanier.itch.io/ggj-2023)
+
+## Synopsis
+
+We do not know yet <!-- todo: add game synopsis -->
+
 ## About
-
-### Global Game Jam
-
-- Jam Site: [Sud PICCEL - Brassart (MONTPELLIER)](https://globalgamejam.org/2023/jam-sites/sud-piccel-brassart-montpellier)
-- Jam year: [2023](https://globalgamejam.org/2023)
-- Theme: not announced yet <!-- todo: add it with video link when announced -->
-
-### Diversifiers
-
-We do not know yet <!-- todo: add diversifiers used in the game -->
 
 ### Controls
 
@@ -52,67 +44,53 @@ We do not know yet  <!-- todo: add controls of the game -->
 
 We do not know yet <!-- todo: add game context -->
 
-## Synopsis
+### Global Game Jam
 
-We do not know yet <!-- todo: add game synopsis -->
+- Jam Site: [Sud PICCEL - Brassart (MONTPELLIER)](https://globalgamejam.org/2023/jam-sites/sud-piccel-brassart-montpellier)
+- Jam year: [2023](https://globalgamejam.org/2023)
+- Theme: not announced yet <!-- todo: add it with video link when announced -->
 
-## Platforms
+### Diversifiers
 
-- Web: [published on itch.io](https://marc-gavanier.itch.io/ggj2023) (Not availabe yet) <!-- todo: make it available -->
+[The GGJ 2023 Diversifiers](https://globalgamejam.org/news/ggj-2023-diversifiers)
+
+- **Sharing Is Caring** (Sponsored by GitHub): Share the source code for your submission in a public GitHub repository and list the URL on your submission page.
+- **Zen**: Game has no intense visual effects or sounds, or lets players adjust intensity
 
 ## Built with
 
-- [Unity 2020.3.26f1](https://unity.com/) is a real-time engine that helps creators to make cross-platform video games
-
-## Getting started
-
-### Prerequisites
-
-- Download and install [Unity](https://unity3d.com/get-unity/download/)
-
-### Installation
-
-1. Clone the repo
-
-```bash
-git clone git@github.com:marc-gavanier/GGJ-2023.git
-```
-
-2. Open the project with Unity
-
-## Contributing
-
-- Create your Feature Branch (git checkout -b feat/amazing-feature)
-- Commit your Changes (git commit -m "feat: add some amazing feature")
-- Push to the Branch (git push origin feat/amazing-feature)
-- Open a Pull Request
+- [Unity 2021.3.17f1](https://unity.com) is a real-time engine that helps creators to make cross-platform video games
 
 ## Credits
 
 ### Jammers
 
-- [Marc Gavanier - Programmer](https://www.linkedin.com/in/marc-gavanier/)
+- [Marc Gavanier - Programmer](https://www.linkedin.com/in/marc-gavanier)
 - Nicolas Treiber - Programmer
 
 ### Audio
 
 #### Musics
 
-- [Slow Motion - Lexin Music](https://pixabay.com/music/small-emotions-slow-motion-121841/)
+- [Slow Motion - Lexin Music](https://pixabay.com/music/small-emotions-slow-motion-121841)
 
 #### Sounds
 
-- [ButtonPress - BigDino1995](https://pixabay.com/sound-effects/buttonpress-94482/)
+- [ButtonPress - BigDino1995](https://pixabay.com/sound-effects/buttonpress-94482)
 
 ### Graphics
 
 #### Textures
 
-- [Blue Sky - Francesco Ungaro](https://www.pexels.com/photo/blue-sky-281260/)
+- [Blue Sky - Francesco Ungaro](https://www.pexels.com/photo/blue-sky-281260)
 
 #### Fonts
 
-- [Cloud - Metal Studio](https://www.dafont.com/fr/cloud-2.font/)
+- [Cloud - Metal Studio](https://www.dafont.com/fr/cloud-2.font)
+
+## Contributing
+
+Any contribution is welcome, learn more in [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ## License
 
