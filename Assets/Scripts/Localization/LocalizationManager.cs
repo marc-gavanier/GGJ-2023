@@ -5,11 +5,13 @@ using Utility;
 
 namespace Localization {
 	public class LocalizationManager : ScriptableObject {
+		private const string Path = "Services/LocalizationManager";
+		
 		private static LocalizationManager instance;
 		
 		[SerializeReference] private ConstStringArray languages;
 
-		public static LocalizationManager Instance => instance ??= ServiceUtility.Find<LocalizationManager>();
+		public static LocalizationManager Instance => instance ??= Resources.Load<LocalizationManager>(Path);
 
 		public ConstStringArray Languages => languages;
 
