@@ -18,6 +18,10 @@ namespace Config {
 				var configuration = ScriptableObject.CreateInstance<Configuration>();
 				configuration.SaveAsset("Configuration");
 				configuration.language = configuration.AddString("Language");
+				configuration.masterVolume = configuration.AddFloat("MasterVolume");
+				configuration.sfxVolume = configuration.AddFloat("SfxVolume");
+				configuration.musicVolume = configuration.AddFloat("MusicVolume");
+				configuration.isFullscreen = configuration.AddBool("IsFullscreen");
 			}
 
 			[MenuItem("Assets/Create/GGJ/Configuration", true)]
